@@ -6,7 +6,14 @@
 </head>
 <body>
   <h1>Evidence Gatherer</h1>
-
+<form action="/results" method="post" accept-charset="utf-8" id="ping">
+	
+	<input type="hidden" name="results" id="input" value='{"testCount": 250, "assertionCount": 2345, "failureCount": 0, "errorCount": 0, "skipCount": 0}' >
+	<p><input type="submit" value="Continue &rarr;"></p>
+</form>
+<script type="text/javascript" charset="utf-8">
+	document.getElementById('ping').submit();
+</script>
 </body>
 </html>
 
